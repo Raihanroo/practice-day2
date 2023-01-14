@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+
+}
+
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 1440px;
+}
+
+nav {
+    /* display: flex;
+ justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 120px;
+
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* banner part */
+
+.bannerimg {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: 65px 38px;
+    padding: 50px;
+}
+
+.banner img {
+    margin-left: 50px;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0 120px;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.banner-description {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.btn-primary {
+    padding: 10px 30px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-primary a {
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    height: 0.5px;
+    margin-left: 94px;
+    margin-right: 100px;
+}
+
+.brand-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+/* proper part */
+
+.proper-titile {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* card part */
+
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    box-shadow: 0 0 5px rgba(53, 52, 52, 0.833);
+    border-radius: 5px;
+}
+
+.card img {
+    width: 89%;
+    padding: 17px 18px;
+    display: block;
+}
+
+.card-content {
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.card-1content {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.card-2content {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-star{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+.card-star p{
+    margin-left: 10px;
+}
+.card-star i{
+    color: #FB8200;
+}
+.last-card-content{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 1px;
+    color: #787885;
+}
+.proper .see-more {
+    text-align: end;
+    margin-right: 220px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #E02C6D;
+}
+.see-more a{
+    color: #E02C6D;
+    margin-left: 10px;
+}
+
+.proper{
+    margin-bottom: 120px;
+}
+/* one-place */
+
+.place{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 50px 185px;
+}
+.place-title{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.palace-description{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #787885;
+}
+.Palace-btn-primary{
+    padding: 10px 20px;
+    background-color: #E02C6D;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+.Palace-btn-primary a {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+/* footer part start */
+
+.footer{
+    background-color: black;
+    padding: 50px;
+}
+.footer-head h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.footer-head p{
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.footer-head h5{
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.footer-icon i{
+    color: #FFFFFF;
+}
+.footer-icon{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   gap: 30px;
+} 
+
+/* media Query */
+
+@media only screen and (max-width:576px) {
+    .banner{
+        flex-direction: column-reverse;
+        height: 80vh;
+        width: 80%;
+    }
+   .cards{
+    flex-direction: column-reverse;
+    width: 100%;
+   }
+
+}
+
+
+@media only screen and (max-width:800px) {
+    .cards{grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        ;}
+ }
